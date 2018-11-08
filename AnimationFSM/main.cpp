@@ -28,9 +28,16 @@ int main()
 	animated_sprite.addFrame(sf::IntRect(343, 3, 84, 84));
 	animated_sprite.addFrame(sf::IntRect(428, 3, 84, 84));
 
+	animated_sprite.addFrame(sf::IntRect(87, 87, 84, 84));
+	animated_sprite.addFrame(sf::IntRect(88, 3, 84, 84));
+	animated_sprite.addFrame(sf::IntRect(173, 3, 84, 84));
+	animated_sprite.addFrame(sf::IntRect(258, 3, 84, 84));
+	animated_sprite.addFrame(sf::IntRect(343, 3, 84, 84));
+	animated_sprite.addFrame(sf::IntRect(428, 3, 84, 84));
+
 	// Setup the Player
 	Player player(animated_sprite);
-	Input input;
+	/*Input input;*/
 	
 	// Start the game loop
 	while (window.isOpen())
@@ -45,7 +52,7 @@ int main()
 				// Close window : exit
 				window.close();
 				break;
-			case sf::Event::KeyPressed:
+			/*case sf::Event::KeyPressed:
 				if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 				{
 					input.setCurrent(Input::Action::LEFT);
@@ -58,15 +65,19 @@ int main()
 				{
 					input.setCurrent(Input::Action::UP);
 				}
+				else if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+				{
+					input.setCurrent(Input::Action::DOWN);
+				}
 				break;
-			default:
-				input.setCurrent(Input::Action::IDLE);
-				break;
+			default:*/
+				/*input.setCurrent(Input::Action::IDLE);
+				break;*/
 			}
 		}
 
 		// Handle input to Player
-		player.handleInput(input);
+		player.handleInput();
 
 		// Update the Player
 		player.update();
