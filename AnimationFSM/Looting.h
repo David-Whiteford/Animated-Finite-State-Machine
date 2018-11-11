@@ -1,23 +1,22 @@
-#ifndef IDLE_H
-#define IDLE_H
+#ifndef LOOTING_H
+#define LOOTING_H
 
 #include <State.h>
 
-class Idle : public State
+class Looting : public State
 {
 public:
-	Idle() {};
-	~Idle() {};
-	void handleInput();
-	void update();
+	Looting() {};
+	~Looting() {};
 
+	void idle(Animation* a);
 	void jumping(Animation* a);
 	void falling(Animation* a);
-	void looting(Animation* a);
 	void shovelling(Animation* a);
 	void swordplay(Animation* a);
 	void walking(Animation* a);
 	void climbing(Animation* a);
+
 };
 
 #endif // !IDLE_H

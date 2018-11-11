@@ -1,21 +1,21 @@
-#ifndef CLIMBING_H
-#define CLIMBING_H
+#ifndef SHOVELLING_H
+#define SHOVELLING_H
 
 #include <State.h>
 
-class Climbing : public State
+class Shovelling : public State
 {
 public:
-	Climbing() {};
-	~Climbing() {};
+	Shovelling() {};
+	~Shovelling() {};
 	void idle(Animation* a);
 	void jumping(Animation* a);
 	void falling(Animation* a);
 	void looting(Animation* a);
-	void shovelling(Animation* a);
+	void climbing(Animation* a);
 	void swordplay(Animation* a);
 	void walking(Animation* a);
-	
+
 };
 
 #endif // !IDLE_H

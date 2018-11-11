@@ -1,5 +1,5 @@
 #include <AnimatedSprite.h>
-
+#include <Animation.h>
 AnimatedSprite::AnimatedSprite() 
 {
 	m_current_frame = 0;
@@ -37,16 +37,23 @@ const int AnimatedSprite::getCurrentFrame() {
 	return m_current_frame;
 }
 
-void AnimatedSprite::update(){
-	if (m_clock.getElapsedTime() > m_time) {
-		if (m_frames.size() > m_current_frame + 1)
-		{
-			m_current_frame++;
-		}
-		else {
-			m_current_frame = 0;
-		}
-		m_clock.restart();
+void AnimatedSprite::update() 
+{
+
+	 
+	if (m_clock.getElapsedTime() > m_time)
+	{
+			if (m_frames.size() > m_current_frame + 1)
+			{
+				m_current_frame++;
+			}
+			else 
+			{
+				m_current_frame = 0;
+			}
+			m_clock.restart();
 	}
+	
+
 }
 

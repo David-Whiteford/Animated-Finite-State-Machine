@@ -47,3 +47,19 @@ void Animation::falling()
 {
 	m_current->falling(this);
 }
+void Animation::walking()
+{
+	m_current->walking(this);
+}
+void Animation::shovelling()
+{
+	m_current->shovelling(this);
+}
+void Animation::swordplay()
+{
+	m_current->swordplay(this);
+}
+void Animation::looting()
+{
+	m_current->looting(this);
+}

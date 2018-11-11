@@ -37,7 +37,7 @@ void Player::handleInput()
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
-		m_animation.jumping();
+		m_animation.walking();
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 	{
@@ -47,32 +47,23 @@ void Player::handleInput()
 	{
 		m_animation.falling();
 	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+	{
+		m_animation.swordplay();
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+	{
+		m_animation.shovelling();
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::L))
+	{
+		m_animation.looting();
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))
+	{
+		m_animation.idle();
+	}
 
-
-
-	//switch (in.getCurrent())
-	//{
-	//case Input::Action::IDLE:
-	//	//std::cout << "Player Idling" << std::endl;
-	//	m_animation.idle();
-	//	break;
-	//case Input::Action::UP:
-	//	//std::cout << "Player Up" << std::endl;
-	//	m_animation.climbing();
-	//	break;
-	//case Input::Action::LEFT:
-	//	//std::cout << "Player Left" << std::endl;
-	//	m_animation.jumping();
-	//	break;
-	//case Input::Action::RIGHT:
-	//	//std::cout << "Player Idling" << std::endl;
-	//	m_animation.jumping();
-	//case Input::Action::DOWN:
-	///*	m_animation.
-	//	break;*/
-	//default:
-	//	break;
-	//}
 }
 
 void Player::update()
