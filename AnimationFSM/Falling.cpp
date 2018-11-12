@@ -30,13 +30,14 @@ void Falling::jumping(Animation* a)
 void Falling::shovelling(Animation* a)
 {
 	std::cout << "Cant go from Falling -> Shovelling " << std::endl;
+
 	
 }
 void Falling::swordplay(Animation* a)
 {
 	std::cout << "Falling -> Swordplay " << std::endl;
 	a->setCurrent(new Swordplay());
-	delete this;
+	delete this; 
 }
 
 void Falling::climbing(Animation* a)

@@ -16,7 +16,7 @@ public:
 	void shovelling(Animation* a);
 	void swordplay(Animation* a);
 	void walking(Animation* a);
-	void falling(Animation* a);
+	
 	void climbing(Animation* a);
 };
 

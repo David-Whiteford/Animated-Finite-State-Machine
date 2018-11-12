@@ -1,22 +1,2 @@
-﻿  AnimatedSprite.cpp
-c:\users\dave2\desktop\new folder (4)\animated-finite-state-machine\animationfsm\animatedsprite.cpp(46): warning C4018: '>': signed/unsigned mismatch
-  Animation.cpp
-  Climbing.cpp
-  Falling.cpp
-  Idle.cpp
-  Input.cpp
-  Jumping.cpp
-  Looting.cpp
-  main.cpp
-  Player.cpp
-c:\users\dave2\desktop\new folder (4)\animated-finite-state-machine\animationfsm\player.cpp(31): warning C4101: 'event': unreferenced local variable
-  shovelling.cpp
-  Swordplay.cpp
-  Walking.cpp
-  Generating Code...
-Walking.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Falling::falling(class Animation *)" (?falling@Falling@@UAEXPAVAnimation@@@Z)
-Climbing.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Falling::falling(class Animation *)" (?falling@Falling@@UAEXPAVAnimation@@@Z)
-Falling.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Falling::falling(class Animation *)" (?falling@Falling@@UAEXPAVAnimation@@@Z)
-Idle.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Falling::falling(class Animation *)" (?falling@Falling@@UAEXPAVAnimation@@@Z)
-Jumping.obj : error LNK2001: unresolved external symbol "public: virtual void __thiscall Falling::falling(class Animation *)" (?falling@Falling@@UAEXPAVAnimation@@@Z)
-C:\Users\dave2\Desktop\New folder (4)\Animated-Finite-State-Machine\Debug\AnimationFSM.exe : fatal error LNK1120: 1 unresolved externals
+﻿  Climbing.cpp
+  AnimationFSM.vcxproj -> G:\Animated-Finite-State-Machine\Debug\AnimationFSM.exe

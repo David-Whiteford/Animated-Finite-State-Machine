@@ -31,10 +31,12 @@ void Climbing::looting(Animation* a)
 {
 	std::cout << "Cant go from Climbing -> Looting " << std::endl;
 	
+	
 }
 void Climbing::walking(Animation* a)
 {
 	std::cout << "Cant go from Climbing -> Walking " << std::endl;
+
 	
 }
 void Climbing::shovelling(Animation* a)

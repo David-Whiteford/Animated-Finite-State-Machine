@@ -21,8 +21,7 @@ Player::~Player() {}
 
 AnimatedSprite& Player::getAnimatedSprite()
 {
-	int frame = m_animated_sprite.getCurrentFrame();
-	m_animated_sprite.setTextureRect(m_animated_sprite.getFrame(frame));
+	m_animated_sprite.setTextureRect(m_animated_sprite.getCurrentFrame());
 	return m_animated_sprite;
 }
 
@@ -34,34 +33,42 @@ void Player::handleInput()
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 	{
 		m_animation.jumping();
+		m_animated_sprite.setFrameRow(1);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 	{
 		m_animation.walking();
+		m_animated_sprite.setFrameRow(2);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 	{
 		m_animation.climbing();
+		m_animated_sprite.setFrameRow(7);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
 	{
 		m_animation.falling();
+		m_animated_sprite.setFrameRow(6);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
 	{
 		m_animation.swordplay();
+		m_animated_sprite.setFrameRow(4);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
 	{
 		m_animation.shovelling();
+		m_animated_sprite.setFrameRow(3);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::L))
 	{
 		m_animation.looting();
+		m_animated_sprite.setFrameRow(5);
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::I))
 	{
 		m_animation.idle();
+		m_animated_sprite.setFrameRow(0);
 	}
 
 }
